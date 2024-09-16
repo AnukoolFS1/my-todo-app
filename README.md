@@ -1,7 +1,7 @@
 # Todo-App
-The app uses Context store and reducer for function, and also state for state update;
+The app uses Context store and reducer for functioning, and offcourse useState for state update,
 <br />
-for storage this also saves the values in browser local storage memory;
+for storage this app store the values in browser local storage memory;
 
 ## Author 
-### Anukool
+### `Anukool`
