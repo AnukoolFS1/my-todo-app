@@ -4,9 +4,11 @@ const Reducer = (State = [], action) => {
             return [
                 ...State,
                 action.payload
-            ]
+            ];
+        case 'Delete':
+            return State.filter((e, i) =>  i !== action.payload);
         default:
-            return [...State]
+            return State
     }
 }
 

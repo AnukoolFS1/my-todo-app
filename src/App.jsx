@@ -8,8 +8,8 @@ const App = () => {
     const {todo,dispatch} = Context()
 
     return (<>
-        <Input todo={todo} />
-        <List dispatch={dispatch} />
+        <Input dispatch={dispatch} />
+        <List  todo={todo} />
     </>)
 }
 
