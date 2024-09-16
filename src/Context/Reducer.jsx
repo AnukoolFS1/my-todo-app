@@ -6,7 +6,13 @@ const Reducer = (State = [], action) => {
                 action.payload
             ];
         case 'Delete':
-            return State.filter((e, i) =>  i !== action.payload);
+            return State.filter((e, i) => i !== action.payload);
+
+        case "Edit":
+            return State.map((e, i) => {
+                if (i !== action.index) return e;
+                else return action.payload;
+            })
         default:
             return State
     }

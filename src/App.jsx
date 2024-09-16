@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
 
-    const {todo,dispatch} = Context()
+    const { todo, dispatch } = Context()
 
     return (<>
         <Input dispatch={dispatch} />
-        <List  todo={todo} />
+        <List todo={todo} />
     </>)
 }
 
